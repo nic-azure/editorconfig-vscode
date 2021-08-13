@@ -5,8 +5,7 @@ import { getFixturePath, getOptionsForFixture, wait } from '../testUtils'
 
 import * as utils from 'vscode-test-utils'
 
-suite('EditorConfig extension', function () {
-	this.retries(2)
+suite('EditorConfig extension', () => {
 	suiteTeardown(utils.closeAllFiles)
 
 	test('indent_style = tab; tab_width = n', async () => {
